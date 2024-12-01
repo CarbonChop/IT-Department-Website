@@ -9,7 +9,7 @@ import ContactPage from './pages/ContactPage';
 function App() {
   return (
     <>
-      <BrowserRouter basename="/it-department-website"></BrowserRouter>
+      <BrowserRouter basename="/it-department-website">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -17,6 +17,7 @@ function App() {
           <Route path="/faculty" element={<FacultyPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
+      </BrowserRouter>
     </>
   );
 }
