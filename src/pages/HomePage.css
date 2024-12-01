@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Mobile Devices (Portait) */
+@media (max-width: 480px) {
+    .featured-programs h2 {
+        font-size: 1.5rem;
+    }
+    .programs-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .program-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .department-overview p, .mission p {
+        font-size: 1rem;
+    }
+}
+/* Tablets (Portrait) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .programs-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .program-card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .department-overview p, mission p {
+        font-size: 1.1rem;
+    }
+    .featured-programs h2 {
+        font-size: 1.75rem;
+    }
+}
+/* Tablets (Landscape) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .programs-grid {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .program-card {
+        width: 280px;
+    }
+    .department-overview p, .mission p {
+        font-size: 1.2rem;
+    }
+}
+/* Desktops */
+@media (min-width: 1025px) {
+    .programs-grid{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .program-card {
+        width: 300px;
+    }
+    .department-overview p, .mission p {
+        font-size: 1.2rem;
+    }
+    .featured-programs h2 {
+        font-size: 2rem;
+    }
+}

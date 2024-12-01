@@ -1,0 +1,61 @@
+.programs {
+    margin-top: 70px;
+    padding: 20px;
+}
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 15px;
+    justify-content: center;
+}
+.program-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.accordion-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #005596;
+    cursor: pointer;
+}
+.accordion-content {
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+.accordion-header:hover {
+    color: #003f7f;
+}
+/* Phones (Portrait and Landscape) */
+@media (max-width: 480px) {
+    .programs-grid {
+        grid-template-columns: 1fr; 
+    }
+    .program-card {
+        padding: 15px;
+    }
+    .accordion-header {
+        font-size: 1.25rem;
+    }
+    .accordion-content {
+        font-size: 0.9rem;
+    }
+}
+/* For Tablets (Portrait) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .programs-grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+/* For Tablets (Landscape) and larger screens */
+@media (min-width: 769px) {
+    .programs-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+  

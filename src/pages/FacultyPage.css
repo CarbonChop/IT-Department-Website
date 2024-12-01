@@ -1,0 +1,127 @@
+.faculty {
+    margin-top: 90px;
+}
+.faculty-title {
+    text-align: center;
+}
+.faculty-row {
+    display: flex;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.faculty-photo {
+    flex: 0 0 120px; 
+    margin-right: 20px;
+}
+
+.faculty-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.faculty-info {
+    flex: 1;
+}
+
+.faculty-info h3 {
+    margin: 0;
+    color: #005596;
+}
+
+.faculty-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.faculty-info a {
+    color: #005596;
+    text-decoration: none;
+}
+
+.faculty-info a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 480px) and (orientation: portrait) {
+    .faculty-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+        padding: 20px; 
+        height: auto;
+    }
+
+    .faculty-photo {
+        margin-right: 0;
+        margin-bottom: 15px; 
+        flex: 0 0 auto; 
+    }
+
+    .faculty-info {
+        flex: none; 
+        text-align: center; 
+    }
+
+    .faculty-info h3 {
+        font-size: 1.2rem; 
+    }
+
+    .faculty-info p {
+        font-size: 0.9rem; 
+    }
+}
+@media (max-width: 480px) and (orientation: landscape) {
+    .faculty-row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: auto;
+    }
+    .faculty-photo {
+        margin-right: 10px;
+    }
+    .faculty-info {
+        text-align: left; 
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    .faculty-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+    .faculty-photo {
+        margin-bottom: 15px;
+    }
+    .faculty-info h3 {
+        font-size: 1.4rem;
+    }
+    .faculty-info p {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    .faculty-row {
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+        height: auto;
+    }
+    .faculty-photo {
+        flex: 0 0 200px;
+        margin-right: 20px;
+    }
+    .faculty-info {
+        text-align: left;
+    }
+}
+
+

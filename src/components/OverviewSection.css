@@ -1,0 +1,30 @@
+.department-overview {
+    background-color: #f4f4f9;
+    margin-top: 80px;
+}
+.mission, .department-overview {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 40px 20px;
+    text-align: center;
+}
+.department-overview h1, .mission h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.department-overview p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.mission p{
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
