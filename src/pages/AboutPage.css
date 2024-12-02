@@ -1,0 +1,68 @@
+.about-page {
+    margin-top: 103px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.card-header {
+    cursor: pointer;
+}
+.card-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+.card-body {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+.card img {
+    width: 50%;
+    margin-top: 10px;
+}
+.history-title, .faculty-title, .goals-title {
+    text-align: center;
+    color: #005596;
+}
+/* Phones (Portrait and Landscape) */
+@media (max-width: 480px) {
+    .cards-container {
+      grid-template-columns: 1fr; 
+      padding: 10px;
+    }
+    .card {
+      margin-bottom: 15px;
+    }
+}
+/* Tablets (Portrait) */
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    .cards-container {
+      grid-template-columns: 1fr; 
+      padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+}
+/* Tablets (Landscape) */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 25px;
+        padding: 20px;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
+  

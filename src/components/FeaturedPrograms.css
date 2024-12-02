@@ -1,0 +1,10 @@
+.featured-programs {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+.featured-programs h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}

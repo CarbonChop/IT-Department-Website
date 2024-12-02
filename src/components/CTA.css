@@ -1,0 +1,49 @@
+.cta-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+.cta-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.cta-button {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.info-button {
+    background-color: #d5f20d;
+    color: #2a0df2;
+}
+.apply-button {
+    background-color: #ff7f00;
+    color: white;
+}
+.cta-button:hover {
+    opacity: 0.9;
+}
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .cta-section h2 {
+      font-size: 2rem; 
+    }
+    .cta-section p {
+      font-size: 1rem; 
+    }
+    .cta-buttons {
+      flex-direction: column; 
+    }
+    .cta-buttons a {
+      width: 100%; 
+      margin-bottom: 15px;
+    }
+}
